@@ -1,0 +1,40 @@
+1) Write a command to perform basic arthemetic in r
+
+a) calculate the square root of 729
+b) In each case what is the value of x ?
+i)x <--2-1*2 
+ii)x <--6/3-2+1*0+3/3-3
+
+a)
+# Define the number
+number <- 729
+
+# Calculate the square root
+result <- sqrt(number)
+
+# Print the result
+print(result)
+
+output:
+[1] 27
+
+b)
+# Calculate the value of x
+x <- 2 - 1 * 2
+
+# Print the value of x
+print(x)
+
+output:
+[1] 0
+
+c)
+# Calculate the value of x
+x <- 6/3 - 2 + 1 * 0 + 3/3 - 3
+
+# Print the value of x
+print(x)
+
+output:
+[1] -2
+
