@@ -1,0 +1,30 @@
+Data frames
+* Employee_detailes
+
+employee_info<-data.frame(
+employee_name=(c("jagadeesh","damodar","saikumar")),
+employee_salary=(c(2000,25000,9000)),
+employee_id=(c(192224160,192224161,192224203)))
+print(employee_info)
+str(employee_info)
+summary(employee_info)
+
+output:
+
+  employee_name employee_salary employee_id
+1     jagadeesh            2000   192224160
+2       damodar           25000   192224161
+3      saikumar            9000   192224203
+> str(employee_info)
+'data.frame':   3 obs. of  3 variables:
+ $ employee_name  : chr  "jagadeesh" "damodar" "saikumar"
+ $ employee_salary: num  2000 25000 9000
+ $ employee_id    : num  1.92e+08 1.92e+08 1.92e+08
+> summary(employee_info)
+ employee_name      employee_salary  employee_id       
+ Length:3           Min.   : 2000   Min.   :192224160  
+ Class :character   1st Qu.: 5500   1st Qu.:192224160  
+ Mode  :character   Median : 9000   Median :192224161  
+                    Mean   :12000   Mean   :192224175  
+                    3rd Qu.:17000   3rd Qu.:192224182  
+                    Max.   :25000   Max.   :192224203  
