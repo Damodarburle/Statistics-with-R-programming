@@ -1,0 +1,70 @@
+city<-c("tampa","surat","harlford","denver")
+state<-c("dd","ss","aa","cc")
+zipcode<-c("507003",584848,89457,557894)
+
+address<-cbind(city,state,zipcode)
+
+
+cat("### the first data frame \n")
+
+print(address)
+
+
+new.address<-data.frame(
+city=c("lowry","charlote"),
+state=c("co","fl"),
+zipcode=c(58899,87459)
+)
+
+CAT("##THE second data frame")
+
+print(new.address)
+
+all.addresses<-rbind(address,new.address)
+print(all.addresses)
+
+  output:
+
+
+ city<-c("tampa","surat","harlford","denver")
+> state<-c("dd","ss","aa","cc")
+> zipcode<-c("507003",584848,89457,557894)
+> 
+> address<-cbind(city,state,zipcode)
+> 
+> 
+> cat("### the first data frame \n")
+### the first data frame 
+> 
+> print(address)
+     city       state zipcode 
+[1,] "tampa"    "dd"  "507003"
+[2,] "surat"    "ss"  "584848"
+[3,] "harlford" "aa"  "89457" 
+[4,] "denver"   "cc"  "557894"
+> 
+> 
+> new.address<-data.frame(
++ city=c("lowry","charlote"),
++ state=c("co","fl"),
++ zipcode=c(58899,87459)
++ )
+> 
+> CAT("##THE second data frame")
+Error in CAT("##THE second data frame") : could not find function "CAT"
+> 
+> print(new.address)
+      city state zipcode
+1    lowry    co   58899
+2 charlote    fl   87459
+> 
+> all.addresses<-rbind(address,new.address)
+> print(all.addresses)
+      city state zipcode
+1    tampa    dd  507003
+2    surat    ss  584848
+3 harlford    aa   89457
+4   denver    cc  557894
+5    lowry    co   58899
+6 charlote    fl   87459
+>  
