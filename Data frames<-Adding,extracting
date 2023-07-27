@@ -1,0 +1,12 @@
+employee_details<-data.frame(
+ID=c(22,33,55,66,77),
+name=c('ramu','hari','shiva','sai','shu'),
+occupation=c('It','Ds','software','Sc','c'),
+employee=c('m','f','m','f','m')
+)
+print(employee_details)
+summary(employee_details)
+result<-data.frame(employee_details$occupation)
+print(result)
+employee_details$salary=c(2000,5000,6000,8000,9000)
+print(employee_details)
