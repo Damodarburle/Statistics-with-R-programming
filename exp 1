@@ -1,0 +1,14 @@
+1.Write a R program to take input from the user (name and age) and display the values. Also print 
+the version of R installation.
+
+name <- readline(prompt="Name: ")
+age <- readline(prompt="Age : ")
+print(paste("User:",name,":",age))
+print(R.version.string)
+
+output:
+Rscript /tmp/WaH53v9oze.r
+Name: 
+Age : 
+[1] "User:  : "
+[1] "R version 4.2.3 (2023-03-15)"
